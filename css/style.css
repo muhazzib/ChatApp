@@ -1,0 +1,128 @@
+
+.inputcustompositon{
+    position: relative;
+    top: 70px
+}
+
+.custominputwidth{
+    width: 300px;
+}
+
+
+.animate-top {
+    position: relative;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 1s;
+    animation-name: animatetop;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatetop {
+    from { top:-100px; opacity:0} 
+    to { top:0px; opacity:1}
+  }
+  
+  @keyframes animatetop { 
+    from{ top:-100px; opacity:0 } 
+    to{ top:0px; opacity:1 }
+  }
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+    bottom: 0
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0} 
+    to { bottom:0px; opacity:1}
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0px; opacity:1 }
+  }
+
+  .jumbotron{
+      background-color: white;
+  
+  }
+  .logo{
+    background-image: url("../images/logo2.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 150px 130px;
+    background-repeat: no-repeat;
+  }
+  .imglogo{
+    width: 150px;
+    height: 100px;
+  }
+  
+/* body{
+background-image:url("../images/back.jpg");
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+} */
+
+
+.icons{
+  width: 75px;
+  height: 75px;
+  padding: 20px;
+}
+
+
+
+#greetuser{
+  position: relative;
+  top: 4px;
+}
+
+#exampleFormControlTextarea1{
+  width: 416px;
+  position: relative;
+  top: 10px;
+  min-height: 70px;
+  max-height: 70px;
+  right: 3px;
+}
+
+#duaoutput{
+  max-width: 500px;
+ height: 500px;
+ overflow: scroll;
+ overflow-y: auto;
+ overflow-x: hidden;
+ background-image: url("../images/chatback.jpeg");
+}
+.sendbtn{
+  position: relative;
+  top: 10px;
+  left: 2px;
+  width: 80px;
+}
+.cutompositionofmaincon{
+  position: relative;
+  top: 100px;
+  max-width: 550px;
+}
+.alert{
+  margin: 20px;
+  color: black !important;
+  opacity: 0.7;
+}
+.alert:hover{
+  opacity: 1;
+}
+
+.customnav{
+  border-bottom:1px solid lightgray
+}
