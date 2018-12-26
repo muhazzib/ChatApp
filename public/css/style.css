@@ -99,8 +99,8 @@ background-size: cover;
   max-width: 500px;
  height: 500px;
  overflow: scroll;
- overflow-y: auto;
- overflow-x: hidden;
+ min-width: 500px;
+
  background-image: url("../images/chatback.jpeg");
 }
 .sendbtn{
@@ -125,4 +125,9 @@ background-size: cover;
 
 .customnav{
   border-bottom:1px solid lightgray
+}
+
+.timecustom{
+  display: block;
+  color: darkgreen;
 }

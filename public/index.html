@@ -5,13 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
         crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyA3TSI2XptsJh2l0W04aSVIQVBeNoDBrm8",
+        authDomain: "chat-app-by-muhazzib.firebaseapp.com",
+        databaseURL: "https://chat-app-by-muhazzib.firebaseio.com",
+        projectId: "chat-app-by-muhazzib",
+        storageBucket: "chat-app-by-muhazzib.appspot.com",
+        messagingSenderId: "466299806750"
+      };
+      firebase.initializeApp(config);
+      function changeHashOnLoad() {
+      window.location.href += '#';
+      setTimeout('changeHashAgain()', '50');
+    }
+
+    function changeHashAgain() {
+      window.location.href += '1';
+    }
+
+    var storedHash = window.location.hash;
+    window.setInterval(function () {
+      if (window.location.hash != storedHash) {
+        window.location.hash = storedHash;
+      }
+    }, 50);
+    window.onload = changeHashOnLoad();
+    </script>
 </head>
 
-<body>
+<body onload="clearlocalstorage()">
     
     <div class="jumbotron jumbotron animate-top">
         <div class="row">
